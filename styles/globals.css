@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Rubik';
+        src: url('/fonts/Rubik-Regular.woff2') format('woff2');
+    }
+    
+    @font-face {
+        font-family: 'Rubik-Bold';
+        src: url('/fonts/Rubik-Bold.woff2') format('woff2');
+    }
+}

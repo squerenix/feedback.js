@@ -21,8 +21,13 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "indent":"warn",
+        "indent": "off",
+        "@typescript-eslint/indent": ["error"],
         "react/react-in-jsx-scope": "off",
-        "semi":"error"
+        "semi": "error",
+        "require-jsdoc": "off",
+        "max-len":"off",
+        "linebreak-style": "off",
+        "jsx-quotes":["error", "double"]
     }
 }
