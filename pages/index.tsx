@@ -6,7 +6,7 @@ import Hero from '../components/Hero';
 
 const Home: NextPage = () => {
     return (
-        <div>
+        <div className="bg-[#f7fafc]">
             <div className="container mx-auto">
                 <Head>
                     <title>Feedback</title>
