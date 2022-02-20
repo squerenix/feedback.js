@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .masonry {
+        column-count: 3;
+        column-gap: 1.5em;
+    }
+    .break-inside {
+        break-inside: avoid;
+        margin-top: 20px;
+        margin-bottpm: 20px;
+    }
+}
+
 @layer base {
     @font-face {
         font-family: 'Rubik';

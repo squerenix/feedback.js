@@ -1,6 +1,6 @@
 import type {NextComponentType} from 'next';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faGithub} from '@fortawesome/free-brands-svg-icons';
 
 const Hero: NextComponentType = () => {
     return (

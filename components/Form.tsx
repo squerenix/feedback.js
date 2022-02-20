@@ -1,4 +1,4 @@
-import type { NextComponentType } from "next";
+import type {NextComponentType} from 'next';
 
 const Form: NextComponentType = () => {
     return (
@@ -11,6 +11,6 @@ const Form: NextComponentType = () => {
             </div>
         </>
     );
-}
+};
 
 export default Form;
