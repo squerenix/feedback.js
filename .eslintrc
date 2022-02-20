@@ -27,6 +27,6 @@
         "semi": "error",
         "require-jsdoc": "off",
         "max-len":"off",
-        "linebreak-style": ["error", "windows"]
+        "linebreak-style": ["warning", "windows"]
     }
 }
