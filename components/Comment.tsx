@@ -22,17 +22,18 @@ const Comment: NextComponentType = () => {
         
         onSnapshot(q, (QuerySnapshot) => {
             setComment(QuerySnapshot.docs.map(doc => ({
-                id:doc.id, text: doc.data().text, timestamp: doc.data().timestamp?.toDate().getTime()
+                id:doc.id, 
+                text: doc.data().text, 
+                timestamp: doc.data().timestamp?.toDate().getTime()
             })));
         })
-
     }, []);
 
     return (
         <>
             <div className="xl:masonry before:box-inherit after:box-inherit gap-5 py-10 px-5">
                 {comments.map(comment => (
-                    <div key={comment.id} className="break-inside py-4 px-3 mb-5 bg-gray-300 rounded text-md font-medium font-rubik text-slate-600 shadow-lg hover:shadow-gray-400 xl:hover:scale-105 duration-500 cursor-pointer tracking-wide">
+                    <div key={comment.id} className="break-inside py-4 px-3 mb-5 bg-gray-100 rounded text-md font-medium font-rubik text-slate-600 shadow-lg hover:shadow-gray-400 xl:hover:scale-105 duration-500 cursor-pointer tracking-wide">
                         { comment.text }
                         <span className="text-sm block mt-5 text-gray-400">{moment(comment.timestamp).fromNow()}</span>
                     </div>
