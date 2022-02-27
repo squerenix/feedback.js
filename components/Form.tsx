@@ -1,4 +1,4 @@
-import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
+import { addDoc, collection } from 'firebase/firestore';
 import type {NextComponentType} from 'next';
 import { useState } from 'react';
 import { db } from '../firebase/initFirebase';
