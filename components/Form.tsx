@@ -1,6 +1,7 @@
 import { addDoc, collection } from 'firebase/firestore';
 import type {NextComponentType} from 'next';
 import { useState } from 'react';
+import Swal from 'sweetalert2';
 import { db } from '../firebase/initFirebase';
 
 const Form: NextComponentType = () => {
@@ -23,7 +24,10 @@ const Form: NextComponentType = () => {
             await addDoc(collectionRef, {...form, timestamp: new Date()});
             setForm({text: '', timestamp: ''});
         }else {
-            alert('text must insert.');
+            Swal.fire({
+                title: 'Fill the text!',
+                icon:'error'
+            });
         }
     }
 
